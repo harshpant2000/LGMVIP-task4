@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient( #c9ffbf, #ffafbd )
+    
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+    
+}
+
+form {
+    box-shadow: 10px 10px 10px 1px;
+    border-radius: 10px;
+
+}
+
+
+.value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: black;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+    border-radius:5px ;
+    font-family: oxygen;
+    font-size:20px ;
+}
+
+span:hover {
+    background: radial-gradient(#1CB5E0,#000046);
+    cursor: pointer;
+    font-size:25px;
+
+}
+
+span.clear:hover {
+    background: #FF0800;
+    cursor: pointer;
+}
+
+span.clear {
+    grid-column: span 2;
+    width: 120px;
+    background: #0c2835;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+span.plus {
+    grid-row: span 2;
+    height: 120px;
+    cursor: pointer;
+}
+
+span.equal {
+    background: orange;
+    grid-column: span 2;
+    width: 120px;
+    cursor: pointer;
+    font-size: 30px;
+}
